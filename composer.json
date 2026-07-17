@@ -6,14 +6,13 @@
     "homepage": "https://github.com/rapidwebltd/php-postcodes",
     "license": "LGPL-3.0-only",
     "require": {
-        "php": ">=5.5.9",
-        "guzzlehttp/guzzle": "~6.0",
-        "fzaninotto/faker": "^1.6"
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^7.4.5",
+        "fakerphp/faker": "^1.9.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7",
-        "fzaninotto/faker": "^1.6",
-        "satooshi/php-coveralls": "^2.0"
+        "phpunit/phpunit": "^5.7 || ^9.6",
+        "php-coveralls/php-coveralls": "^2.0"
     },
     "autoload": {
         "psr-4": {
