@@ -6,8 +6,8 @@
     "homepage": "https://github.com/rapidwebltd/php-postcodes",
     "license": "LGPL-3.0-only",
     "require": {
-        "php": ">=5.5.9",
-        "guzzlehttp/guzzle": "^6.0 || ^7.0",
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^7.4.5",
         "fakerphp/faker": "^1.9.1"
     },
     "require-dev": {

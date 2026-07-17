@@ -3,6 +3,7 @@ name: Tests
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 jobs:
   tests:
@@ -11,7 +12,6 @@ jobs:
       fail-fast: false
       matrix:
         php: ['7.4', '8.5']
-        guzzle: ['^6.0', '^7.0']
 
     steps:
       - uses: actions/checkout@v4
@@ -19,6 +19,5 @@ jobs:
         with:
           php-version: ${{ matrix.php }}
           coverage: none
-      - run: composer require --no-update "guzzlehttp/guzzle:${{ matrix.guzzle }}"
       - run: composer update --prefer-dist --no-interaction
       - run: vendor/bin/phpunit
